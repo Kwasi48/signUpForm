@@ -6,14 +6,21 @@
 
 :root {
     --fonty:"Norse";
-    --fonty-size:56px;
-    --fonty-norm: 24px
+    --fonty-size:64px;
+    --fonty-norm: 24px;
+    --pad: 2vh;
+    --label-input: 12px;
 }
 
 @font-face {
     font-family: 'Norse';
     src: url(./fonts/Norsebold.otf);
     font-size: 56px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -88,4 +95,26 @@ img {
     justify-content: center;
     flex-direction: column;
 }
+
+.outer {
+    padding-top: var(--pad);
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+}
+
+.fills {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--label-input);
+    padding-bottom: var(--pad);
+    font-family: ;
+}
+
+ 
+
+
+/* input type[password]:invalid{
+    border-color: red;
+} */
 
